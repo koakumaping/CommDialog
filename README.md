@@ -1,4 +1,4 @@
-## ju-dialog
+## CommDialog
 ### 用法 ###
 1. 在html中引入`cDialog.js`和`cDialog.css`  
 2. 调用函数
