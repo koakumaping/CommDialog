@@ -1,6 +1,6 @@
 ## ju-dialog
 ### 用法 ###
-1. 在html中引入`ju-dialog.js`和`ju-dialog.css`  
+1. 在html中引入`cDialog.js`和`cDialog.css`  
 2. 调用函数
 
 一共有三种模式  
