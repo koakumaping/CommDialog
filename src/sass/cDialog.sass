@@ -1,0 +1,191 @@
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+.c-dialog
+    // font: 14px Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 99999999
+    overflow: hidden
+
+.c-dialog-bg
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    opacity: 0.2
+    -webkit-transition: all .4s
+    transition: all .4s
+
+.c-dialog
+    .c-dialog-bg
+        background-color: rgba(0, 0, 0, 0.6)
+
+.c-dialog-container
+    margin-left: 5%
+    width: 90%
+    -webkit-transition: top cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s
+    transition: top cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s
+    // -webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0, 0, 0, .2),0 1px 8px 0 rgba(0, 0, 0, .12)
+    // box-shadow: 0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0, 0, 0, .2),0 1px 8px 0 rgba(0, 0, 0, .12)
+
+@media (min-width: 992px)
+    .c-dialog-container
+        margin-left: 33.33333333%
+        width: 33.33333333%
+
+@media (min-width: 768px)
+    .c-dialog-container
+        margin-left: 30%
+        width: 40%
+
+.c-dialog-warp
+    margin-left: auto
+    margin-right: auto
+
+@media (min-width: 992px)
+    .c-dialog-warp
+        width: 970px
+
+@media (min-width: 768px)
+    .c-dialog-warp
+        width: 750px
+
+.c-dialog-box
+    background: white
+    border-radius: 3px
+    position: relative
+    outline: none
+    padding: 15px
+    transition-duration: 0.2s
+    transition-timing-function: cubic-bezier(0.36, 1.1, 0.2, 1.2)
+    transition-property: transform, opacity, box-shadow
+
+.c-dialog-box.shark
+    animation: shark 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+
+.c-dialog-box.scale
+    animation: scale 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+
+.c-dialog-box.zoom
+    animation: zoom 0.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+
+.c-dialog-close
+    display: none
+    font: 14px Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif
+    height: 20px
+    width: 20px
+    position: absolute
+    top: 5px
+    right: 5px
+    cursor: pointer
+    opacity: 0.6
+    text-align: center
+    transition: opacity 0.2s ease-in
+    font-size: 20px
+    line-height: 14px
+    &:hover
+        opacity: 1
+
+.c-dialog-title
+    font-weight: blod
+    font-size: 18px
+    line-height: 20px
+    padding-bottom: 15px
+    color: #000
+
+.c-dialog-content
+    font-size: 14px
+    color: #757575
+    margin-bottom: 15px
+    min-height: 40px
+    max-height: 400px
+    line-height: 20px
+    -webkit-transition: height 0.4s ease-in
+    transition: height 0.4s ease-in
+    display: inline-block
+    width: 100%
+    position: relative
+    word-break: break-word
+    overflow-y: auto
+
+.c-dialog-buttons
+    float: right
+
+.c-dialog-clear
+    clear: both
+
+.c-dialog-btn
+    font-family: 'PingFangSC-Medium', 'Microsoft YaHei', '微软雅黑', 'MicrosoftJhengHei', '华文细黑', STHeiti, MingLiu
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: 500
+    text-shadow: none
+    -webkit-transition: background .1s
+    transition: background .1s
+    color: #3b78e7
+    background-color: white
+
+    display: inline-block
+    padding: 6px 12px
+    margin-bottom: 0
+    font-size: 14px
+    line-height: 1.42857143
+    text-align: center
+    white-space: nowrap
+    vertical-align: middle
+    -ms-touch-action: manipulation
+    touch-action: manipulation
+    cursor: pointer
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    background-image: none
+    border: none
+    border-radius: 4px
+
+.c-dialog-btn:hover
+    background: #dddddd
+
+@keyframes shark
+    10%,
+    90%
+        transform: translate3d(-2px, 0, 0)
+
+    20%,
+    80%
+        transform: translate3d(4px, 0, 0)
+
+    30%,
+    50%,
+    70%
+        transform: translate3d(-8px, 0, 0)
+
+    40%,
+    60%
+        transform: translate3d(8px, 0, 0)
+
+@keyframes zoom
+    0%
+        opacity: 0
+        transform: scale(0)
+
+    100%
+        opacity: 1
+        transform: scale(1)
+
+@keyframes scale
+    0%
+        opacity: 1
+        transform: scale(1)
+
+    100%
+        opacity: 0
+        transform: scale(0)

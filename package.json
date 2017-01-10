@@ -1,0 +1,42 @@
+{
+  "name": "dialog",
+  "version": "1.0.0",
+  "description": "web component ju-dialog.",
+  "main": "src/js/dialog",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.9.0",
+    "browser-sync": "^2.13.0",
+    "es6-set": "^0.1.4",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.9",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exec": "^2.1.2",
+    "gulp-file-include": "^0.13.7",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^4.2.0",
+    "stream-combiner2": "^1.1.1"
+  },
+  "scripts": {
+    "build": "gulp",
+    "dist": "gulp dist",
+    "test": "gulp test"
+  },
+  "author": "Ping YF",
+  "license": "MIT"
+}

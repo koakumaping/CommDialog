@@ -1,0 +1,17 @@
+{
+  "name": "ju-dev-tool",
+  "version": "0.0.1",
+  "authors": [
+    "Ziv <wewoor@foxmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
